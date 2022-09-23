@@ -3,8 +3,8 @@
 ############################
 region             = "us-east-1"
 env                = "staging"
-tags_override = {
+tags_override      = {
   "bank:runningtimeframe" = "ALWAYS"
 }
 
-hostname_ec2 = "web-server-staging"
+hostname_ec2       = "web-server-staging"

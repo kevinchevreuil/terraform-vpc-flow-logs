@@ -8,10 +8,10 @@ data "aws_caller_identity" "current" {}
 data "aws_ami" "web_server" {
   most_recent = true
   owners      = ["137112412989"]
-  filter {
-    name      = "name"
-    values    = ["amzn2-ami-hvm-2.0.*-x86_64-gp2*"]
-  }
+    filter {
+      name    = "name"
+      values  = ["amzn2-ami-hvm-2.0.*-x86_64-gp2*"]
+    }
 }
 
 data "aws_iam_role" "ec2_role_ssm" {

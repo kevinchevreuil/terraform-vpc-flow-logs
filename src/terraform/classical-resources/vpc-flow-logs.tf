@@ -3,4 +3,5 @@ resource "aws_flow_log" "flowlogs5src1grp2" {
   log_destination = aws_cloudwatch_log_group.flowlogs5src1grp2.arn
   traffic_type    = "ALL"
   vpc_id          = aws_vpc.vpc.id
+  tags            = merge(local.aws_tags, { Name = "grp2-logs${var.env}" })
 }
