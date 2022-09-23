@@ -1,7 +1,6 @@
 ############################
 #####Account variables######
 ############################
-
 variable "env" {
   description = "specify the environnement"
   type        = string
@@ -30,6 +29,9 @@ variable "tags_override" {
   default     = {}
 }
 
+############################
+#####  Locales values ######
+############################
 locals {
   aws_tags = merge({
     "bank:env"              = var.env

@@ -1,7 +1,6 @@
 ########################################
 ##### Security Groupe to Access to Web Server ###
 ########################################
-
 resource "aws_security_group" "allow_http" {
     name        = "allow_http"
     description = "Security group for web-server with HTTP ports open within VPC"

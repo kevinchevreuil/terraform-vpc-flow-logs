@@ -1,3 +1,4 @@
+#Using the name from the bootstrap sh script#
 data "template_file" "bootstrap" {
   template = file("userdata/bootstrap.sh")
 
@@ -6,6 +7,7 @@ data "template_file" "bootstrap" {
   }
 }
 
+#Create an EC2 ressource#
 resource "aws_instance" "web-grp2" {
     ami                         = data.aws_ami.web_server.id
     instance_type               = "t2.micro"

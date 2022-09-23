@@ -1,9 +1,7 @@
 ##############################################################
 # Data sources to get VPC, subnets and domaine details
 ##############################################################
-
 data "aws_caller_identity" "current" {}
-
 
 data "aws_ami" "web_server" {
   most_recent = true

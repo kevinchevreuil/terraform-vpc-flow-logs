@@ -1,3 +1,4 @@
+#Select the provider to using#
 terraform {
   required_providers {
     aws = {
@@ -7,6 +8,7 @@ terraform {
   }
 }
 
+#Select the region of the cloud provider#
 provider "aws" {
   region = var.region
 }
