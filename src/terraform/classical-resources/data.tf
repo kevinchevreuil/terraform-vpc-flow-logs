@@ -9,8 +9,8 @@ data "aws_ami" "web_server" {
   most_recent = true
   owners      = ["137112412989"]
   filter {
-    name = "name"
-    values = ["amzn2-ami-hvm-2.0.*-x86_64-gp2*"]
+    name      = "name"
+    values    = ["amzn2-ami-hvm-2.0.*-x86_64-gp2*"]
   }
 }
 
