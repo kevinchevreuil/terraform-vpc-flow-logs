@@ -12,3 +12,6 @@ src/terraform/classical-resources/003-vpc-flow-logs.tf = Creation of the VPC flo
 src/terraform/classical-resources/004-ec2.tf = Creation of the EC2 instance  
 src/terraform/regions/stating = preprod  
 src/terraform/regions/prod = prod (do not use)  
+
+## Credits
+Kevin Chevreuil 2022
